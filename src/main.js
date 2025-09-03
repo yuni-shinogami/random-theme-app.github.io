@@ -68,12 +68,6 @@ class ThemeRoulette {
         <p class="text-xl font-bold text-gray-800">${this.finalTheme}</p>
       </div>
     `
-    
-    // 決定時のエフェクト
-    this.themeText.classList.add('animate-pulse')
-    setTimeout(() => {
-      this.themeText.classList.remove('animate-pulse')
-    }, 1000)
   }
   
 
@@ -86,7 +80,6 @@ class ThemeRoulette {
       
       this.stopBtn.disabled = false
       this.stopBtn.classList.remove('opacity-50', 'cursor-not-allowed')
-      this.stopBtn.classList.add('animate-bounce')
     } else {
       // ルーレット停止中
       this.startBtn.disabled = false
@@ -94,7 +87,6 @@ class ThemeRoulette {
       
       this.stopBtn.disabled = true
       this.stopBtn.classList.add('opacity-50', 'cursor-not-allowed')
-      this.stopBtn.classList.remove('animate-bounce')
     }
   }
 }
