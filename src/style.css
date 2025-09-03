@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* カスタムアニメーション */
+@keyframes roulette {
+  0% { 
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% { 
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% { 
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.roulette-animation {
+  animation: roulette 0.15s ease-in-out infinite;
+}
+
+/* タップエフェクト */
+.btn-tap {
+  transition: all 0.1s ease-in-out;
+}
+
+.btn-tap:active {
+  transform: scale(0.95);
+}
+
+/* テーマ表示エリア */
+.theme-display {
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
